@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethio Connect</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #1c2833);
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background: #333;
+            padding: 1em;
+        }
+
+        section, .professional, .payment {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #ecf0f1;
+        }
+
+        p {
+            color: #bdc3c7;
+        }
+
+        .professional {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+        }
+
+        .professional h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .payment {
+            background: #16a085;
+            color: #fff;
+            text-align: center;
+        }
+
+        .payment h2 {
+            font-size: 2em;
+            color: #f1c40f;
+            margin-bottom: 10px;
+        }
+
+        .payment-button, .contact-button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .payment-button:hover, .contact-button:hover {
+            background-color: #c0392b;
+        }
+
+        .select-professional {
+            margin: 20px 0;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .name-button {
+            background: none;
+            border: none;
+            color: #ecf0f1;
+            font-size: 1.5em;
+            text-align: left;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .video-link {
+            display: block;
+            margin: 10px 0;
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ethio Connect</h1>
+    </header>
+
+    <!-- Professionals Section -->
+    <div class="professional">
+        <button id="doctorBeirut" class="name-button">Doctor Beirut</button>
+        <p>Experienced doctor available for video consultations. <br> Over 5 years of experience.</p>
+        <a href="https://yourvideocallplatform.com/doctorBeirut" class="video-link" target="_blank">Video Call with Doctor Beirut</a>
+    </div>
+
+    <div class="professional">
+        <button id="lawyerTekele" class="name-button">Lawyer Tekele</button>
+        <p>Legal expert specializing in various fields. Consultation available through video calls. <br> Over 5 years of experience.</p>
+        <a href="https://yourvideocallplatform.com/lawyerTekele" class="video-link" target="_blank">Video Call with Lawyer Tekele</a>
+    </div>
+
+    <div class="professional">
+        <button id="lawyerSahlue" class="name-button">Lawyer Sahlue</button>
+        <p>Experienced lawyer ready to assist you. Schedule a video consultation for legal advice. <br> Over 5 years of experience.</p>
+        <a href="https://yourvideocallplatform.com/lawyerSahlue" class="video-link" target="_blank">Video Call with Lawyer Sahlue</a>
+    </div>
+
+    <div class="professional">
+        <button id="engineerRobera" class="name-button">Engineer Robera</button>
+        <p>Professional engineer providing consultations on various engineering topics. <br> Over 5 years of experience.</p>
+        <a href="https://yourvideocallplatform.com/engineerRobera" class="video-link" target="_blank">Video Call with Engineer Robera</a>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="payment">
+        <h2>Ready to Schedule a Consultation?</h2>
+        <p>Select a professional and choose a time slot for your appointment.</p>
+
+        <select id="professionalSelect" class="select-professional">
+            <!-- Options -->
+        </select>
+
+        <button class="payment-button">Proceed to Payment</button>
+    </div>
+
+    <!-- Section for Asking Information -->
+    <section>
+        <h2>Ask for Information</h2>
+        <p>If you have any questions or need information, please feel free to ask. We are here to help!</p>
+    </section>
+
+    <!-- Contact button -->
+    <button class="contact-button">Contact Us</button>
+
+    <footer>
+        <p>&copy; 2024 Ethio Connect</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("doctorBeirut").addEventListener("click", function() {
+                alert("Doctor Beirut clicked!");
+            });
+
+            document.getElementById("lawyerTekele").addEventListener("click", function() {
+                alert("Lawyer Tekele clicked!");
+            });
+
+            document.getElementById("lawyerSahlue").addEventListener("click", function() {
+                alert("Lawyer Sahlue clicked!");
+            });
+
+            document.getElementById("engineerRobera").addEventListener("click", function() {
+                alert("Engineer Robera clicked!");
+            });
+        });
+    </script>
+
+</body>
+</html>
