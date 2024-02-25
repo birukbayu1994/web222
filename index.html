@@ -3,215 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethio Connect</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #2c3e50, #1c2833);
-            color: #fff;
-            text-align: center;
-        }
-
-        header {
-            background: #333;
-            padding: 1em;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        header a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-
-        section, .professional, .payment {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-        }
-
-        h1, h2, h3 {
-            color: #ecf0f1;
-        }
-
-        p {
-            color: #bdc3c7;
-        }
-
-        .professional {
-            background: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .professional h3 {
-            margin-bottom: 10px;
-            font-size: 1.5em;
-        }
-
-        .professional p {
-            margin-top: 10px;
-        }
-
-        .payment {
-            background: #16a085;
-            color: #fff;
-            text-align: center;
-        }
-
-        .payment h2 {
-            font-size: 2em;
-            color: #f1c40f;
-            margin-bottom: 10px;
-        }
-
-        .payment-button, .contact-button {
-            background-color: #e74c3c;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-
-        .payment-button:hover, .contact-button:hover {
-            background-color: #c0392b;
-        }
-
-        .select-professional {
-            margin: 20px 0;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            border-radius: 10px;
-        }
-    </style>
+    <title>Ethio tech</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    <header>
-        <div>
-            <a href="#">Go to Your Account</a>
-            <a href="#">Settings</a>
-            <a href="#">Tour Appointment</a>
+    <button id="join-btn">Join The Group</button>
+
+    <div id="stream-wrapper">
+        <div id="video-streams"></div>
+
+        <div id="stream-controls">
+            <button id="leave-btn">Hang Up</button>
+            <button id="mic-btn">Mic On</button>
+            <button id="camera-btn">Camera on/off</button>
         </div>
-        <h1>Ethio Connect</h1>
-    </header>
-
-    <!-- New Content Section -->
-    <section>
-        <h2>The Best Way to Get Information</h2>
-        <p>Connect with professionals through video calls to get the advice you need. Simply click on the professional you want and schedule a consultation.</p>
-    </section>
-
-    <!-- Professionals Section -->
-    <div class="professional">
-        <h3>Doctor Beirut</h3>
-        <p>Dr. Beirut is an experienced medical practitioner with over 5 years of expertise. He is available for video consultations, offering professional advice and guidance to patients. Location: Addis Ababa.</p>
-        <p>Price for 10 Minutes: 10,000 Ethiopian Birr / $100 USD</p>
-        <p>Price for 20 Minutes: 20,000 Ethiopian Birr / $200 USD</p>
-        <p>Price for 30 Minutes: 30,000 Ethiopian Birr / $300 USD</p>
     </div>
 
-    <div class="professional">
-        <h3>Lawyer Tekele</h3>
-        <p>Lawyer Tekele is a legal expert with more than 10 years of experience in various legal fields. He provides consultation services via video calls, offering expert legal advice and solutions to his clients' legal matters. Location: Addis Ababa.</p>
-        <p>Price for 10 Minutes: 20,000 Ethiopian Birr / $200 USD</p>
-        <p>Price for 20 Minutes: 40,000 Ethiopian Birr / $400 USD</p>
-        <p>Price for 30 Minutes: 60,000 Ethiopian Birr / $600 USD</p>
-    </div>
-
-    <div class="professional">
-        <h3>Lawyer Sahlue</h3>
-        <p>Lawyer Sahlue is an experienced attorney ready to assist you with legal matters. With over 8 years of expertise, he offers video consultations to provide legal guidance and solutions tailored to your specific needs. Location: Addis Ababa.</p>
-        <p>Price for 10 Minutes: 30,000 Ethiopian Birr / $300 USD</p>
-        <p>Price for 20 Minutes: 60,000 Ethiopian Birr / $600 USD</p>
-        <p>Price for 30 Minutes: 90,000 Ethiopian Birr / $900 USD</p>
-    </div>
-
-    <div class="professional">
-        <h3>Engineer Robera</h3>
-        <p>Engineer Robera is a professional engineer with more than 15 years of experience in various engineering and technology fields. He offers consultations on engineering topics and innovative solutions through video calls. Location: Addis Ababa.</p>
-        <p>Price for 10 Minutes: 15,000 Ethiopian Birr / $150 USD</p>
-        <p>Price for 20 Minutes: 30,000 Ethiopian Birr / $300 USD</p>
-        <p>Price for 30 Minutes: 45,000 Ethiopian Birr / $450 USD</p>
-    </div>
-
-    <!-- Payment Section -->
-    <div class="payment">
-        <h2>Ready to Schedule a Consultation?</h2>
-        <p>Select a professional and choose a time slot for your appointment.</p>
-
-        <form action="https://yourpaymentserver.com/process_payment" method="post">
-            <select id="professionalSelect" class="select-professional" name="selected_professional">
-                <option value="100">Doctor Beirut - 10 Minutes: 10,000 Ethiopian Birr / $100 USD</option>
-                <option value="200">Doctor Beirut - 20 Minutes: 20,000 Ethiopian Birr / $200 USD</option>
-                <option value="300">Doctor Beirut - 30 Minutes: 30,000 Ethiopian Birr / $300 USD</option>
-                <option value="400">Lawyer Tekele - 10 Minutes: 20,000 Ethiopian Birr / $200 USD</option>
-                <option value="500">Lawyer Tekele - 20 Minutes: 40,000 Ethiopian Birr / $400 USD</option>
-                <option value="600">Lawyer Tekele - 30 Minutes: 60,000 Ethiopian Birr / $600 USD</option>
-                <option value="700">Lawyer Sahlue - 10 Minutes: 30,000 Ethiopian Birr / $300 USD</option>
-                <option value="800">Lawyer Sahlue - 20 Minutes: 60,000 Ethiopian Birr / $600 USD</option>
-                <option value="900">Lawyer Sahlue - 30 Minutes: 90,000 Ethiopian Birr / $900 USD</option>
-                <option value="1000">Engineer Robera - 10 Minutes: 15,000 Ethiopian Birr / $150 USD</option>
-                <option value="1100">Engineer Robera - 20 Minutes: 30,000 Ethiopian Birr / $300 USD</option>
-                <option value="1200">Engineer Robera - 30 Minutes: 45,000 Ethiopian Birr / $450 USD</option>
-            </select>
-
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-
-            <p>Select Payment Method:</p>
-            <input type="radio" name="payment_method" value="Credit Card" required> Credit Card
-            <input type="radio" name="payment_method" value="Visa" required> Visa
-
-            <div>
-                <input type="text" name="credit_card_number" placeholder="Credit Card Number" required>
-            </div>
-
-            <p>Or</p>
-
-            <input type="radio" name="payment_method" value="Tel Birr" required> Tel Birr (Ethiopian Users Only)
-
-            <div>
-                <input type="text" name="tel_birr_number" placeholder="Tel Birr Number (Ethiopian Users)" required>
-            </div>
-
-            <button type="submit" class="payment-button">Proceed to Payment</button>
-        </form>
-    </div>
-
-    <!-- Section for Asking Information -->
-    <section>
-        <h2>Ask for Information</h2>
-        <p>If you have any questions or need information, please feel free to ask. We are here to help!</p>
-    </section>
-
-    <!-- Contact button -->
-    <button class="contact-button">Contact Us</button>
-
-    <footer>
-        <p>&copy; 2024 Ethio Connect</p>
-    </footer>
-
+    <script src="AgoraRTC_N-4.20.0.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
